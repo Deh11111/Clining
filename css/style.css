@@ -172,17 +172,24 @@ body{
     padding: 105px 0 150px;
 }
 .banner__text{
-    background: rgba(255, 255, 255, 0.8);
-    filter: blur(0.5px);
+    background: rgba(255, 255, 255, 0.5);
+    filter: blur(0.7px);
+    max-width: 545px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .banner__title{
-    width: 350px;
+    max-width: 350px;
     font-weight: 800;
     font-size: 48px;
     line-height: 65px;
     color: #2F3131;
     margin-bottom: 35px;
     position: relative;
+    z-index: 2;
 }
 .banner__title::after{
     content: '';
@@ -532,7 +539,9 @@ body{
 .order__inner{
     display: flex;
 }
-
+.order__img img{
+    height: 100%;
+}
 .order__form{
     display: flex;
     flex-direction: column;
@@ -619,7 +628,15 @@ body{
     background-repeat: no-repeat;
     margin: 0 auto;
 }
-
+.carousel__items .slick-dots button {
+    background-color: rgba(138, 223, 59, 0.507);
+}
+.carousel__items .slick-active button {
+    background-color: rgba(223, 133, 59, 0.507);
+}
+.carousel__items .slick-dots button:hover {
+    background-color: rgba(223, 133, 59, 0.507);
+}
 .carousel-arrow{
     position: absolute;
     top: 0;
@@ -644,11 +661,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-top: 75px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .how__item{
-    width: 50%;
+    max-width: 520px;
+    width: 100%;
     padding-left: 135px;
     position: relative;
     padding-bottom: 70px;
@@ -714,6 +732,27 @@ body{
 .slider__box{
     margin-top: 40px;
 }
+.slider__box{
+    
+}
+.slider__box .slider__item {
+    display: flex !important;
+}
+
+.slider__box .slick-current img:nth-child(2){
+    padding: 0 10px;
+}
+.slider__box img{
+    padding: 0 2px;
+}
+
+.slider__box .slick-dots button{
+    background-color: rgb(163, 30, 36);
+}
+
+.slider__box .slick-dots button:hover{
+    background-color: rgba(41, 38, 38, 0.555);
+}
 
 .slider-arrow{
     top:50%;
@@ -751,6 +790,7 @@ body{
     background: #027795;
     font-size: 0;
     border:none;
+    cursor: pointer;
 }
 
 .whats-up{
@@ -973,9 +1013,12 @@ body{
     background: #07627D;
 }
 .contact-us__inner{
+    width: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+.contact-us__content{
+    display: flex;
     margin-top: 60px;
 }
 .contact-us__form {
@@ -1076,6 +1119,13 @@ body{
     padding-left: 10px;
 }
 
+.contact-us__image{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    margin-left: auto;
+}
+
 
 .footer {
     background: #00485A;
@@ -1173,4 +1223,46 @@ body{
     font-size: 96px;
     color: #2F3131;
     line-height:0.8;
+}
+@media(max-width:1040px){
+    .logo__link img{
+        width: 95px;
+    }
+    .header__bottom-company {
+        margin: 5px 0 5px 35px;
+        font-size: 16px;
+        line-height: 15px;
+        color: #2F3131;
+        font-weight: 700;
+    }
+    .header__contact-tel {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+}
+@media(max-width:920px){
+    .header__top-menu-inner {
+        justify-content: space-around;
+    }
+    .header-top__menu-link {
+        font-size: 12px;
+        line-height: 12px;
+        padding-right: 10px;
+    }
+    .header__login-img {
+        padding: 15px 5px 15px 0;
+    }
+    .header__login-text {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+
+@media(max-width:615px){
+    .header__top{
+        display: none;
+    }
 }

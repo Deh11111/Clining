@@ -9,8 +9,11 @@ $(function(){
         nextArrow: '<button class="carousel-arrow carousel-arrow-next"><img src="image/carousel/right-arrow.svg" alt=""></button>',
     })
     $('.slider__box').slick({
-        slidesToShow: 2,
+        infinite:true,
+        initialSlide:1,
+        slidesToShow: 3,
         slidesToScroll: 1,
+        initialSlide:0,
         dots:true,
         prevArrow: '<button class="slider-arrow  carousel-arrow slider-arrow-prev"><img src="image/carousel/left-arrow.svg" class="carousel-arrow-image"alt=""></button>',
         nextArrow: '<button class="slider-arrow carousel-arrow slider-arrow-next"><img src="image/carousel/right-arrow.svg" alt=""></button>',

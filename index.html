@@ -102,8 +102,10 @@
         <div class="container">
             <div class="banner__inner">
                 <div class="banner__text">
-                    <h1 class="banner__title">Клининговая компания<br> в Москве</h1>
-                    <p class="banner__category">Профессиональная уборка офисов и квартир </p>
+                    <div class="banner__txt-box">
+                        <h1 class="banner__title">Клининговая компания<br> в Москве</h1>
+                        <p class="banner__category">Профессиональная уборка офисов и квартир </p>
+                    </div>
                 </div>
                 <form class="banner__form">
                     <div class="banner__form-title">ЗАКАЗАТЬ УБОРКУ</div>
@@ -115,7 +117,6 @@
         </div>
     </section>
     <section class="benefits">
-        <!-- ???? about width txt-->
         <div class="container">
             <div class="benefits__inner">
                 <div class="benefits__items">
@@ -332,13 +333,28 @@
                 <h2 class="title">ВЫПОЛНЕННЫЕ РАБОТЫ</h2>
                 <div class="slider__box">
                     <div class="slider__item">
-                        <img class="slider__item-image" src="image/slider/slider1.png" alt="">
+                        <img class="slider__item-image" src="image/slider/slider1.jpg" alt="">
+                        <img class="slider__item-image" src="image/slider/slider2.jpg" alt="">
+                    </div>
+                    <div class="slider__item for">
+                        <img class="slider__item-image" src="image/slider/slider3.jpg" alt="">
+                        <img class="slider__item-image" src="image/slider/slider4.jpg" alt="">
                     </div>
                     <div class="slider__item">
-                        <img src="image/slider/slider2.png" alt="">
+                        <img class="slider__item-image" src="image/slider/slider5.jpg" alt="">
+                        <img class="slider__item-image" src="image/slider/slider6.jpg" alt="">
                     </div>
                     <div class="slider__item">
-                        <img src="image/slider/slider3.png" alt="">
+                        <img class="slider__item-image" src="image/slider/slider5.jpg" alt="">
+                        <img class="slider__item-image" src="image/slider/slider6.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__item-image" src="image/slider/slider5.jpg" alt="">
+                        <img class="slider__item-image" src="image/slider/slider6.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__item-image" src="image/slider/slider5.jpg" alt="">
+                        <img class="slider__item-image" src="image/slider/slider6.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -452,44 +468,47 @@
         <h2 class="title title__contact-us">СВЯЖИТЕСЬ С НАМИ</h2>
         <div class="contact-us__background ">
             <div class="container">
-                <div class="contact-us__inner">
-                    <form class="contact-us__form" action="">
-                        <input type="text" class="contact-us__input" placeholder="Ваше имя">
-                        <input type="text" class="contact-us__input" placeholder="Ваш номер">
-                        <textarea class="contact-us__messeage" placeholder="Напишите Ваше сообщение" 
-                            cols="30" rows="10"></textarea>
-                        <button type="submit" class="btn form__btn">Отправить </button>
-                        <div class="contact-us__form-confiditial">
-                            Нажимая на кнопку "Отправить",
-                            вы даете согласие на обработку ваших персональных данных, согласно политике
-                            конфиденциальности
-                        </div>
+                <div class="contact-us__content">
+                    <div class="contact-us__inner">
+                        <form class="contact-us__form" action="">
+                            <input type="text" class="contact-us__input" placeholder="Ваше имя">
+                            <input type="text" class="contact-us__input" placeholder="Ваш номер">
+                            <textarea class="contact-us__messeage" placeholder="Напишите Ваше сообщение" cols="30"
+                                rows="10"></textarea>
+                            <button type="submit" class="btn form__btn">Отправить </button>
+                            <div class="contact-us__form-confiditial">
+                                Нажимая на кнопку "Отправить",
+                                вы даете согласие на обработку ваших персональных данных, согласно политике
+                                конфиденциальности
+                            </div>
 
-                    </form>
-                    <div class="contact-us__links">
-                        <div class="contact-us__link-box">
-                            <img src="image/contact-us-svg/instagram.svg" alt="">
-                            <a class="contact-us__link contact-us__link--icon1" href="#">Instagram</a>
-                        </div>
-                        <div class="contact-us__link-box">
-                            <img src="image/contact-us-svg/whatsup.svg" alt="">
-                            <a class="contact-us__link contact-us__link--icon1" href="#">WhatsApp</a>
-                        </div>
-                        <div class="contact-us__link-box">
-                            <img src="image/contact-us-svg/tel.svg" alt="">
-                            <a class="contact-us__link contact-us__link--icon1" href="#">Позвонить</a>
-                        </div>
-                        <div class="contact-us__link-box">
-                            <img src="image/contact-us-svg/facebooksvg.svg" alt="">
-                            <a class="contact-us__link contact-us__link--icon1" href="#">Facebook</a>
-                        </div>
-                        <div class="contact-us__link-box">
-                            <img src="image/contact-us-svg/vksvg.svg" alt="">
-                            <a class="contact-us__link contact-us__link--icon1" href="#">ВКонтакте</a>
+                        </form>
+                        <div class="contact-us__links">
+                            <div class="contact-us__link-box">
+                                <img src="image/contact-us-svg/instagram.svg" alt="">
+                                <a class="contact-us__link contact-us__link--icon1" href="#">Instagram</a>
+                            </div>
+                            <div class="contact-us__link-box">
+                                <img src="image/contact-us-svg/whatsup.svg" alt="">
+                                <a class="contact-us__link contact-us__link--icon1" href="#">WhatsApp</a>
+                            </div>
+                            <div class="contact-us__link-box">
+                                <img src="image/contact-us-svg/tel.svg" alt="">
+                                <a class="contact-us__link contact-us__link--icon1" href="#">Позвонить</a>
+                            </div>
+                            <div class="contact-us__link-box">
+                                <img src="image/contact-us-svg/facebooksvg.svg" alt="">
+                                <a class="contact-us__link contact-us__link--icon1" href="#">Facebook</a>
+                            </div>
+                            <div class="contact-us__link-box">
+                                <img src="image/contact-us-svg/vksvg.svg" alt="">
+                                <a class="contact-us__link contact-us__link--icon1" href="#">ВКонтакте</a>
+                            </div>
                         </div>
                     </div>
                     <img class="contac-us__image" src="image/contac-us.png" alt="">
                 </div>
+
             </div>
         </div>
     </section>
